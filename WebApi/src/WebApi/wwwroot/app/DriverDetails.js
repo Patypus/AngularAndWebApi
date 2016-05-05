@@ -1,6 +1,8 @@
 ﻿var driverDetailsModule = angular.module('DriverDetails',
-    'ngRoute',
-    'TeamsModule');
+    [
+        'ngRoute',
+        'TeamsModule'
+    ]);
 
 
 driverDetailsModule.config(function($routeProvider) {
