@@ -3,5 +3,5 @@
 teamsModule.controller('TeamsController', function () {
     var self = this;
 
-    self.message = "Hi world";
+    self.message = "Teams page";
 });
