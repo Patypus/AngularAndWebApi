@@ -1,6 +1,7 @@
 ﻿var driverDetailsModule = angular.module('DriverDetails',
     [
         'ngRoute',
+        'DriversModule',
         'PastSeasonsModule',
         'StandingsModule',
         'TeamsModule'
@@ -9,6 +10,12 @@
 
 driverDetailsModule.config(function($routeProvider) {
     $routeProvider
+        .when('/drivers', {
+            templateUrl: 'app/Drivers/drivers.html',
+            controller: 'DriversController',
+            controllerAs: 'DriversController',
+            requiresLogin: false
+        })
         .when('/pastseasons', {
             templateUrl: 'app/PastSeasons/pastseasons.html',
             controller: 'PastSeasonsController',
