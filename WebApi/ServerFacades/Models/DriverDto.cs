@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ServerFacades.Models
 {
     public class DriverDto
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         public int Name { get; set; }
 
