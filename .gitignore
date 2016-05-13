@@ -4,3 +4,5 @@ WebApi/src/WebApi/wwwroot/lib/*
 WebApi/src/WebApi/wwwroot/bin/*
 WebApi/ServerFacades/bin/*
 WebApi/ServerFacades/obj/*
+WebApi/DataLayer/bin/*
+WebApi/DataLayer/obj/*
