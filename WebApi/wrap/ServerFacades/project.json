@@ -7,6 +7,12 @@
         "assembly": "../../ServerFacades/obj/{configuration}/ServerFacades.dll",
         "pdb": "../../ServerFacades/obj/{configuration}/ServerFacades.pdb"
       }
+    },
+    "dnx451": {
+      "bin": {
+        "assembly": "../../ServerFacades/bin/Debug/ServerFacades.dll",
+        "pdb": "../../ServerFacades/bin/Debug/ServerFacades.pdb"
+      }
     }
   }
 }

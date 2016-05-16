@@ -43,6 +43,7 @@
     <Compile Include="Facades\Interfaces\IDriverService.cs" />
     <Compile Include="Facades\Interfaces\ITeamsService.cs" />
     <Compile Include="Models\DriverDto.cs" />
+    <Compile Include="Models\SimpleTeamDetailsDto.cs" />
     <Compile Include="Models\TeamDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

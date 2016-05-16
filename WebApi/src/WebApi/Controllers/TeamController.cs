@@ -1,8 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using Microsoft.AspNet.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ServerFacades.Models;
 
 namespace WebApi.Controllers
 {
@@ -16,7 +17,7 @@ namespace WebApi.Controllers
             {
             };
 
-            return Json("", JsonRequestBehavior.AllowGet);
+            return Json("");
         }
     }
 }
