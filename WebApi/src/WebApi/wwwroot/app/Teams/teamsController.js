@@ -11,7 +11,7 @@ teamsModule.controller('TeamsController', function ($scope, $http) {
 
     $http({
         method: 'GET',
-        url: '/Api/GetAnimalsList'
+        url: '/api/Teams/GetAllTeamNames'
     }).then(function successCallback(response) {
         debugger;
 
