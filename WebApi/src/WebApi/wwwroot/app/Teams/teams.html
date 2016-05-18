@@ -3,7 +3,12 @@
     <span>{{TeamsController.message}}</span>
 
     <div>
-        <span>Select a team</span>
+        <span>Select a team:</span>
+        <select ng-model="TeamsController.selectedTeam">
+            <option value="">Please Select...</option>
+            <option ng-repeat="team in TeamsController.teamsList" value="{{team.Id}}">{{team.Name}}</option>
+        </select>
+        <button class="btn btn-primary" ng-click="TeamsController.search()">Search</button>
     </div>
 
     <div>
