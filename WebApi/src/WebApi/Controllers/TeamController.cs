@@ -8,10 +8,12 @@ using ServerFacades.Models;
 
 namespace WebApi.Controllers
 {
+    //[RoutePrefix("api/[controller]")]
     [Route("api/[controller]")]
     public class TeamController : Controller
     {
         [HttpGet]
+        [Route("/GetAllTeamNames")]
         public JsonResult GetAllTeamNames()
         {
             var dummy = new List<SimpleTeamDetailsDto>
@@ -21,7 +23,7 @@ namespace WebApi.Controllers
                 new SimpleTeamDetailsDto { Id = new Guid(), Name = "Williams" }
             };
 
-            return Json("success");
+            return Json(dummy);
         }
     }
 }
