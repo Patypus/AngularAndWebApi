@@ -8,12 +8,10 @@ using ServerFacades.Models;
 
 namespace WebApi.Controllers
 {
-    //[RoutePrefix("api/[controller]")]
-    [Route("api/[controller]")]
     public class TeamController : Controller
     {
         [HttpGet]
-        [Route("/GetAllTeamNames")]
+        [Route("api/team/getAllTeamNames")]
         public JsonResult GetAllTeamNames()
         {
             var dummy = new List<SimpleTeamDetailsDto>
