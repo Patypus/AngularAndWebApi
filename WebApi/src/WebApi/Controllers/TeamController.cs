@@ -23,5 +23,19 @@ namespace WebApi.Controllers
 
             return Json(dummy);
         }
+
+        [HttpGet]
+        [Route("api/team/GetTeamDetails")]
+        public JsonResult GetTeamDetails(Guid teamId)
+        {
+            var details = new TeamDto
+            {
+                Id = new Guid(),
+                ChampionshipYears = new List<int>(),
+                Name = "dummy team"
+            };
+
+            return Json(details);
+        }
     }
 }

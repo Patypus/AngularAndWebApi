@@ -6,6 +6,7 @@ teamsModule.controller('TeamsController', function ($scope, $http) {
     self.message = "Teams page";
     self.teamsList = [];
     self.selectedTeam = null;
+    self.displayTeam = null;
 
     self.displayTitle = function () {
         return "Details:";
@@ -13,6 +14,17 @@ teamsModule.controller('TeamsController', function ($scope, $http) {
 
     self.search = function () {
         alert("Selected: " + self.selectedTeam);
+
+        $http({
+            method: 'GET',
+            url: 'api/team/GetTeamDetails',
+            params: { teamId: self.selectedTeam }
+        }).then(function successCallback(response) {
+            debugger;
+            self.displayTeam = response.data;
+        }, function errorCallback(response) {
+            alert("Unable to load single team details from server. Error code: " + response.status);
+        });
     }
 
     $http({
