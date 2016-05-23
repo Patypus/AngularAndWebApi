@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facades\Interfaces\IDriverService.cs" />
-    <Compile Include="Facades\Interfaces\ITeamsService.cs" />
+    <Compile Include="Facades\DriverFacade.cs" />
+    <Compile Include="Facades\Interfaces\IDriverFacade.cs" />
+    <Compile Include="Facades\Interfaces\ITeamFacade.cs" />
+    <Compile Include="Facades\TeamFacade.cs" />
     <Compile Include="Models\DriverDto.cs" />
     <Compile Include="Models\SimpleTeamDetailsDto.cs" />
     <Compile Include="Models\TeamDto.cs" />

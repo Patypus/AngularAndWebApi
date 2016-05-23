@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ServerFacades.Facades.Interfaces
 {
-    public interface IDriverService
+    public interface IDriverFacade
     {
         List<DriverDto> GetAllDrivers();
     }

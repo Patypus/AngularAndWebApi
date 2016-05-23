@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace ServerFacades.Facades.Interfaces
 {
-    public interface ITeamsService
+    public interface ITeamFacade
     {
         List<TeamDto> GetAllTeams();
+
+        List<SimpleTeamDetailsDto> GetTeamNames();
+
+        TeamDto GetSingleTeamDetails(Guid teamId);
     }
 }
