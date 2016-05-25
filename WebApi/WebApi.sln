@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerFacades", "ServerFaca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{8303DFB2-5C18-4D13-8247-A47BA7CDCD78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerFacadesTests", "ServerFacadesTests\ServerFacadesTests.csproj", "{B168F430-E73A-460B-870A-E83152DC4F39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{8303DFB2-5C18-4D13-8247-A47BA7CDCD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8303DFB2-5C18-4D13-8247-A47BA7CDCD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8303DFB2-5C18-4D13-8247-A47BA7CDCD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B168F430-E73A-460B-870A-E83152DC4F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B168F430-E73A-460B-870A-E83152DC4F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B168F430-E73A-460B-870A-E83152DC4F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B168F430-E73A-460B-870A-E83152DC4F39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
