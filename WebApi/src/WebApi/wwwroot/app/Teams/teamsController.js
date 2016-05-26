@@ -20,7 +20,6 @@ teamsModule.controller('TeamsController', function ($scope, $http) {
             url: 'api/team/GetTeamDetails',
             params: { teamId: self.selectedTeam }
         }).then(function successCallback(response) {
-            debugger;
             self.displayTeam = response.data;
         }, function errorCallback(response) {
             alert("Unable to load single team details from server. Error code: " + response.status);
@@ -31,7 +30,6 @@ teamsModule.controller('TeamsController', function ($scope, $http) {
         method: 'GET',
         url: 'api/team/getAllTeamNames'
     }).then(function successCallback(response) {
-        debugger;
         self.teamsList = response.data;
     }, function errorCallback(response) {
         alert("Unable to load team details from server. Error code: " + response.status);

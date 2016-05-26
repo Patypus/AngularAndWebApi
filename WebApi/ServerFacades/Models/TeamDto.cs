@@ -9,6 +9,8 @@ namespace ServerFacades.Models
 
         public string Name { get; set; }
 
+        public string ColourFlash { get; set; }
+
         public List<int> ChampionshipYears { get; set; }
     }
 }
