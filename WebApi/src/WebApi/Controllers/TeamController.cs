@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNet.Mvc;
 using System;
 using ServerFacades.Facades.Interfaces;
+using ServerFacades.Facades;
 
 namespace WebApi.Controllers
 {
     public class TeamController : Controller
     {
-        private readonly ITeamsService _service;
+        private readonly ITeamFacade _service;
 
         public TeamController()
         {
-            _service = new TeamsService();
+            _service = new TeamFacade();
         }
 
         [HttpGet]
