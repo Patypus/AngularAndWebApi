@@ -51,7 +51,9 @@
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
     <Compile Include="Entities\Driver.cs" />
+    <Compile Include="Entities\Race.cs" />
     <Compile Include="Entities\Team.cs" />
+    <Compile Include="Entities\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
