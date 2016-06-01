@@ -4,7 +4,8 @@
         'DriversModule',
         'PastSeasonsModule',
         'StandingsModule',
-        'TeamsModule'
+        'TeamsModule',
+        'TracksModule'
     ]);
 
 
@@ -32,6 +33,12 @@ driverDetailsModule.config(function($routeProvider) {
             templateUrl: 'app/Teams/teams.html',
             controller: 'TeamsController',
             controllerAs: 'TeamsController',
+            requiresLogin: false
+        })
+        .when('/tracks', {
+            templateUrl: 'app/Tracks/tracks.html',
+            controller: 'TracksController',
+            controllerAs: 'TracksController',
             requiresLogin: false
         })
 })
