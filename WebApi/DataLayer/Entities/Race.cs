@@ -14,6 +14,8 @@ namespace DataLayer.Entities
 
         public DateTime RaceDate { get; set; }
 
+        public string RaceName { get; set; }
+
         public Guid TrackId { get; set; }
 
         public virtual Track Track { get; set; }

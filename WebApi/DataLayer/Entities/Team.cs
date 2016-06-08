@@ -11,7 +11,11 @@ namespace DataLayer.Entities
     {
         [Key]
         public Guid Id { get; set; }
+
         public string Name { get; set; }
+
         public string ColourFlash { get; set; }
+
+        public virtual ICollection<TeamChampionshipEntry> ChapionshipEntries { get; set; }
     }
 }

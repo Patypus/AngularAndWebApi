@@ -16,6 +16,6 @@ namespace DataLayer.Entities
 
         public int Points { get; set; }
 
-        public virtual ICollection<RaceResultPosition> RaceResultPossitions { get; set; }
+        public virtual ICollection<RaceResultPosition> RaceResultPositions { get; set; }
     }
 }
