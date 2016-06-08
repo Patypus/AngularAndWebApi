@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Entities
 {
-    public class Race
+    public class PositionDetails
     {
         [Key]
         public Guid Id { get; set; }
 
-        public DateTime RaceDate { get; set; }
+        public int PosiitionNumber { get; set; }
 
-        public Guid TrackId { get; set; }
+        public int Points { get; set; }
 
-        public virtual Track Track { get; set; }
-
-        public virtual ICollection<RaceResultPosition> RaceResultPositions { get; set; }
+        public virtual ICollection<RaceResultPosition> RaceResultPossitions { get; set; }
     }
 }

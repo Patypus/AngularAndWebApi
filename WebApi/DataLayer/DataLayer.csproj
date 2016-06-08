@@ -50,9 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
+    <Compile Include="Entities\ChampionshipYear.cs" />
     <Compile Include="Entities\Driver.cs" />
+    <Compile Include="Entities\DriverChampionshipEntry.cs" />
+    <Compile Include="Entities\PositionDetails.cs" />
     <Compile Include="Entities\Race.cs" />
+    <Compile Include="Entities\RaceResultPosition.cs" />
     <Compile Include="Entities\Team.cs" />
+    <Compile Include="Entities\TeamChampionshipEntry.cs" />
     <Compile Include="Entities\Track.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
