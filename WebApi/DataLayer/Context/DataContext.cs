@@ -14,7 +14,14 @@ namespace DataLayer.Context
         {
         }
 
-        public DbSet<Team> Teams { get; set; }
+        public DbSet<ChampionshipYear> ChampionshipYears { get; set; }
         public DbSet<Driver> Drivers { get; set; }
-    }
+        public DbSet<DriverChampionshipEntry> DriverChampionshipEntrys { get; set; }
+        public DbSet<PositionDetails> PossitionDetails { get; set; }
+        public DbSet<Race> Races { get; set; }
+        public DbSet<RaceResultPosition> RaceResultPosition { get; set; }
+        public DbSet<Team> Teams { get; set; }
+        public DbSet<TeamChampionshipEntry> TeamChampionshipEntrys { get; set; }
+        public DbSet<Track> Tracks { get; set; }
+}
 }

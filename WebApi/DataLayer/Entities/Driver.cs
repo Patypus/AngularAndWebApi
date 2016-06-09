@@ -16,6 +16,8 @@ namespace DataLayer.Entities
 
         public int Number { get; set; }
 
+        public bool Retired { get; set; }
+
         public virtual ICollection<DriverChampionshipEntry> DriverChampionshipEntries { get; set; }
 
         public virtual ICollection<RaceResultPosition> RaceResultPositions { get; set; }
