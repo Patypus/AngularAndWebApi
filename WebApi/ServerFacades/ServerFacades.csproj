@@ -44,12 +44,18 @@
     <Compile Include="Facades\Interfaces\IDriverFacade.cs" />
     <Compile Include="Facades\Interfaces\ITeamFacade.cs" />
     <Compile Include="Facades\TeamFacade.cs" />
+    <Compile Include="Factory\FacadeFactory.cs" />
     <Compile Include="Models\DriverDto.cs" />
     <Compile Include="Models\SimpleTeamDetailsDto.cs" />
     <Compile Include="Models\TeamDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{8303dfb2-5c18-4d13-8247-a47ba7cdcd78}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

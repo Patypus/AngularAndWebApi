@@ -1,4 +1,5 @@
-﻿using ServerFacades.Facades.Interfaces;
+﻿using DataLayer.Context;
+using ServerFacades.Facades.Interfaces;
 using ServerFacades.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace ServerFacades.Facades
 {
     public class TeamFacade : ITeamFacade
     {
+        private readonly DataContext _context;
+
+        public TeamFacade(DataContext context)
+        {
+            _context = context;
+        }
+
         public List<TeamDto> GetAllTeams()
         {
             throw new NotImplementedException();

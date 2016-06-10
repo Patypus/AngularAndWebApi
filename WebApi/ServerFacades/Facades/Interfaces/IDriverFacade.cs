@@ -10,5 +10,7 @@ namespace ServerFacades.Facades.Interfaces
     public interface IDriverFacade
     {
         List<DriverDto> GetAllDrivers();
+
+        Guid AddDriver(DriverDto driverDetails);
     }
 }
