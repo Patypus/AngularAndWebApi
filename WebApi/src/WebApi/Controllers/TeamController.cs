@@ -2,23 +2,24 @@
 using System;
 using ServerFacades.Facades.Interfaces;
 using ServerFacades.Facades;
+using ServerFacades.Factory;
 
 namespace WebApi.Controllers
 {
     public class TeamController : Controller
     {
-        private readonly ITeamFacade _service;
+        private readonly IFacadeFactory _facades;
 
-        public TeamController()
+        public TeamController(IFacadeFactory factory)
         {
-            _service = new TeamFacade();
+            _facades = factory;
         }
 
         [HttpGet]
         [Route("api/team/getAllTeamNames")]
         public JsonResult GetAllTeamNames()
         {
-            var allTeamNames = _service.GetTeamNames();
+            var allTeamNames = _facades.TeamFacade().GetTeamNames();
 
             return Json(allTeamNames);
         }
@@ -27,7 +28,7 @@ namespace WebApi.Controllers
         [Route("api/team/GetTeamDetails")]
         public JsonResult GetTeamDetails(Guid teamId)
         {
-            var details = _service.GetSingleTeamDetails(teamId);
+            var details = _facades.TeamFacade().GetSingleTeamDetails(teamId);
 
             return Json(details);
         }

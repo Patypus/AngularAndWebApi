@@ -45,6 +45,7 @@
     <Compile Include="Facades\Interfaces\ITeamFacade.cs" />
     <Compile Include="Facades\TeamFacade.cs" />
     <Compile Include="Factory\FacadeFactory.cs" />
+    <Compile Include="Factory\IFacadeFactory.cs" />
     <Compile Include="Models\DriverDto.cs" />
     <Compile Include="Models\SimpleTeamDetailsDto.cs" />
     <Compile Include="Models\TeamDto.cs" />
